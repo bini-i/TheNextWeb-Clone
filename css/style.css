@@ -152,7 +152,7 @@ main {
   font-size: 13px;
 }
 
-.insights-section div > * {
+.insights-section div>* {
   margin-bottom: 3px;
 }
 
@@ -499,4 +499,69 @@ main {
   background: url(https://cdnp3.stackassets.com/48a13bece46b88b04b96c76e982c713100cc7e92/store/6537cc5ac58ae55e70d4fa139edb82eb2bd9dbf254b4959ae414bfa3f9e8/sale_22290_primary_image.jpg);
   background-size: cover;
   background-position: bottom;
+}
+
+/* Footer */
+.social {
+  background: #131313;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  box-sizing: border-box;
+}
+
+.social .social-items {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social .social-items a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 10px;
+}
+
+.social .bottom-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.social .bottom-nav li {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.legal {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.legal .tmw,
+.legal .stackpath {
+  display: flex;
+}
+
+.legal .tmw img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.legal .stackpath img {
+  width: 60px;
+  margin-left: 5px;
 }
