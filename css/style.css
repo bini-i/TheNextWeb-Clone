@@ -152,7 +152,7 @@ main {
   font-size: 13px;
 }
 
-.insights-section div>* {
+.insights-section div > * {
   margin-bottom: 3px;
 }
 
@@ -343,6 +343,46 @@ main {
 
 .catagory .hard-fork {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-368x276.jpg) no-repeat;
+  background-size: cover;
+}
+
+.catagory .apps {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_248964-368x276.png) no-repeat;
+  background-size: cover;
+}
+
+.catagory .gear {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-368x276.png) no-repeat;
+  background-size: cover;
+}
+
+.catagory .tech {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/04/methane_mars_1200-368x276.png) no-repeat;
+  background-size: cover;
+}
+
+.catagory .creative {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design-13-368x276.jpg) no-repeat;
+  background-size: cover;
+}
+
+.catagory .podium {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/mixed-reality-spatial-computing-gq-368x276.png) no-repeat;
+  background-size: cover;
+}
+
+.catagory .insights {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2020-year-gq-368x276.png) no-repeat;
+  background-size: cover;
+}
+
+.catagory .launch {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2-1-368x276.jpg) no-repeat;
+  background-size: cover;
+}
+
+.catagory .distract {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/call-of-duty-warzone-modern-warfare-season-6-368x276.png) no-repeat;
   background-size: cover;
 }
 
