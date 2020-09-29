@@ -25,7 +25,6 @@ p {
 }
 
 /* Global Setting */
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -70,9 +69,11 @@ header .hamburger-icon {
 }
 
 /* Main Section */
-
+main {
+  display: flex;
+  flex-direction: column;
+}
 /* Banner Section */
-
 .banner {
   height: 60px;
   background: #ffdd3c;
@@ -81,7 +82,6 @@ header .hamburger-icon {
 }
 
 /* Insights section */
-
 .insights-section-article:nth-child(1) {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-796x448.jpg) center no-repeat;
   background-size: cover;
@@ -108,7 +108,7 @@ header .hamburger-icon {
 }
 
 .insights-gradient {
-  background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background: rgba(0, 0, 0, .25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
   background-size: 100% 100%;
   display: block;
   z-index: 10;
@@ -131,4 +131,81 @@ header .hamburger-icon {
   width: 55%;
   color: #9f9f9e;
   font-size: 13px;
+}
+
+/* Latest post section */
+.latest-post {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 28px;
+}
+
+.latest-post h2 {
+  color: #f42;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.post-item {
+  padding: 8px 0;
+}
+
+.post-item .post-img {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-right: 15px;
+}
+
+.latest-post .post-item:nth-child(2) .post-img {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/1-36-516x270.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.latest-post .post-item:nth-child(3) .post-img {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-480x270.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.latest-post .post-item:nth-child(4) .post-img {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-59-516x270.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.latest-post .post-item:nth-child(5) .post-img {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design2-516x270.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.latest-post .post-item:nth-child(6) .post-img {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-464x270.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.latest-post .post-item:nth-child(7) .post-img {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Farmville-516x270.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.post-item h4 {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post-item ul li {
+  float: left;
+  margin-right: 15px;
+}
+
+.post-item ul {
+  color: #aaa;
+  font-size: 12px;
 }
