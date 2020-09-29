@@ -134,14 +134,14 @@ main {
 }
 
 /* Latest post section */
-.latest-post {
+.latest-post, .latest-funding-section {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
   margin-top: 28px;
 }
 
-.latest-post h2 {
+.latest-post h2, .latest-funding-section h2 {
   color: #f42;
   font-size: 24px;
   font-weight: bold;
@@ -207,5 +207,80 @@ main {
 
 .post-item ul {
   color: #aaa;
+  font-size: 12px;
+}
+
+/* latest funding section */
+
+.latest-funding-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.latest-funding-header a {
+  padding-top: 1em;
+  color: #f94640;
+  font-size: 13px;
+}
+
+.latest-funding-body img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.latest-funding-title {
+  background: #f94640;
+  color: #fff;
+  padding: 10px 16px 10px 84px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.latest-funding-child {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.price-div {
+  padding: 10px 16px 10px 84px;
+  color: #000;
+  background: rgba(255,68,34,.08);
+  margin: 0;
+}
+
+.price-div h5 {
+  margin: 0;
+}
+
+.price-title {
+  font-size: 18px;
+  color: #000;
+  margin: 5px;
+}
+
+.icons-div a {
+  padding-left: 2em;
+  font-size: 13px;
+  color: #555;
+  margin-right: 1em;
+  display: block;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+.icons-div i {
+  color: #000;
+}
+
+.latest-funding-body ul {
+  border-top: 2px solid #fee9e5;
+  padding-top: 10px;
+  margin-top: 5px;
   font-size: 12px;
 }
