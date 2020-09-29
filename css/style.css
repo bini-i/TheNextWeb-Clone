@@ -7,6 +7,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 input,
 button,
 ul,
@@ -29,13 +30,25 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.gradient {
+  background: rgba(0, 0, 0, 0.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  z-index: 10;
+  height: 100%;
+}
+
 /* Header section */
 header {
+  position: fixed;
+  width: 100%;
   height: 48px;
+  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  z-index: 5;
 }
 
 .logo {
@@ -68,20 +81,40 @@ header .hamburger-icon {
   width: 120%;
 }
 
-/* Main Section */
-main {
-  display: flex;
-  flex-direction: column;
-}
 /* Banner Section */
 .banner {
+  position: fixed;
+  margin-top: 48px;
+  width: 100%;
   height: 60px;
   background: #ffdd3c;
   display: grid;
   place-items: center;
+  z-index: 5;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
 }
 
 /* Insights section */
+.insights-section {
+  margin-top: 85px;
+}
+
+.insights-section-article {
+  width: 100%;
+  height: 28vh;
+  display: block;
+  float: left;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+}
+
 .insights-section-article:nth-child(1) {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-796x448.jpg) center no-repeat;
   background-size: cover;
@@ -97,35 +130,20 @@ main {
   background-size: cover;
 }
 
-.insights-section-article {
-  width: 100%;
-  display: block;
-  float: left;
-  height: 210px;
-  color: #fff;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.insights-gradient {
-  background: rgba(0, 0, 0, .25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
-  background-size: 100% 100%;
-  display: block;
-  z-index: 10;
-  height: 100%;
-}
-
 .insights-section div {
   position: absolute;
   bottom: 1rem;
   padding: 0 12px;
 }
 
-.insights-section h2 {
+.insights-section h2,
+.catagory-container h2 {
   font-size: 20px;
+  font-weight: bold;
 }
 
-.insights-section ul {
+.insights-section ul,
+.catagory-container ul {
   display: flex;
   justify-content: space-between;
   width: 55%;
@@ -133,15 +151,22 @@ main {
   font-size: 13px;
 }
 
+.insights-section div > * {
+  margin-bottom: 3px;
+}
+
 /* Latest post section */
-.latest-post, .latest-funding-section {
+.latest-post,
+.latest-funding-section {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  margin: 0 20px;
   margin-top: 28px;
 }
 
-.latest-post h2, .latest-funding-section h2 {
+.latest-post h2,
+.latest-funding-section h2,
+.catagory-title {
   color: #f42;
   font-size: 24px;
   font-weight: bold;
@@ -211,7 +236,6 @@ main {
 }
 
 /* latest funding section */
-
 .latest-funding-header {
   display: flex;
   flex-direction: column;
@@ -250,18 +274,24 @@ main {
 .price-div {
   padding: 10px 16px 10px 84px;
   color: #000;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
   margin: 0;
 }
 
 .price-div h5 {
   margin: 0;
+  color: #000;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 .price-title {
   font-size: 18px;
   color: #000;
+  font-weight: bold;
   margin: 5px;
+  margin-left: 0;
 }
 
 .icons-div a {
