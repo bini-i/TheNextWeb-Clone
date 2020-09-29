@@ -26,6 +26,10 @@ p {
 
 /* Global Setting */
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Header section */
 header {
   height: 48px;
@@ -74,4 +78,57 @@ header .hamburger-icon {
   background: #ffdd3c;
   display: grid;
   place-items: center;
+}
+
+/* Insights section */
+
+.insights-section-article:nth-child(1) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-796x448.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.insights-section-article:nth-child(2) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/TNW2020-feature.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.insights-section-article:nth-child(3) {
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/2020-year-gq-796x417.png) center no-repeat;
+  background-size: cover;
+}
+
+.insights-section-article {
+  width: 100%;
+  display: block;
+  float: left;
+  height: 210px;
+  color: #fff;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.insights-gradient {
+  background: rgba(0,0,0,.25) url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  z-index: 10;
+  height: 100%;
+}
+
+.insights-section div {
+  position: absolute;
+  bottom: 1rem;
+  padding: 0 12px;
+}
+
+.insights-section h2 {
+  font-size: 20px;
+}
+
+.insights-section ul {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  color: #9f9f9e;
+  font-size: 13px;
 }
