@@ -146,10 +146,18 @@ main {
 .insights-section ul,
 .catagory-container ul {
   display: flex;
-  justify-content: space-between;
-  width: 55%;
+  justify-content: flex-start;
   color: #9f9f9e;
   font-size: 13px;
+}
+
+.insights-section ul li,
+.catagory-container ul li {
+  margin-right: 12px;
+}
+
+.insights-date {
+  display: none;
 }
 
 .insights-section div>* {
@@ -564,4 +572,88 @@ main {
 .legal .stackpath img {
   width: 60px;
   margin-left: 5px;
+}
+
+/* For screen size greater than 768px */
+@media screen and (min-width: 768px) {
+  .insights-section {
+    margin-top: 110px;
+    position: relative;
+  }
+
+  .insights-section-article:nth-child(1) {
+    float: left;
+    width: 66%;
+    height: 100%;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .insights-section-article:nth-child(2),
+  .insights-section-article:nth-child(3) {
+    float: right;
+    width: 33%;
+    height: 49%;
+  }
+}
+
+/* For screen size greater than 1024px */
+@media screen and (min-width: 1024px) {
+  .insights-section {
+    height: 75vh;
+  }
+
+  .insights-section-article:nth-child(1) h2 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .insights-section-article:nth-child(2) h2,
+  .insights-section-article:nth-child(3) h2 {
+    font-size: 25px;
+    line-height: 1.1;
+  }
+
+  .insights-gradient {
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png) no-repeat;
+    display: block;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+  }
+
+  .insights-logo {
+    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg) no-repeat;
+    width: 45%;
+    height: 90%;
+    left: 30px;
+    z-index: 5;
+  }
+
+  .insights-date {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 415px;
+    z-index: 5;
+    font-size: 14px;
+  }
+}
+
+/* For screen size greater than 768px and less than 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .insights-section {
+    height: 60vh;
+  }
+
+  .insights-section-article:nth-child(1) h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .insights-section-article:nth-child(2) h2,
+  .insights-section-article:nth-child(3) h2 {
+    font-size: 20px;
+    line-height: 1.1;
+  }
 }
