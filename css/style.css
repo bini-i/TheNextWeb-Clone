@@ -166,12 +166,17 @@ main {
 
 /* Latest post section */
 .latest-post,
+.latest-post .posts,
 .latest-funding-section,
 .catagory-container {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 12px;
   margin-top: 28px;
+}
+
+.latest-post .posts {
+  margin: 0;
 }
 
 .latest-post h2,
@@ -198,37 +203,37 @@ main {
   margin-right: 15px;
 }
 
-.latest-post .post-item:nth-child(2) .post-img {
+.latest-post .post-item:nth-child(1) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/1-36-516x270.jpg);
   background-size: cover;
   background-position: bottom;
 }
 
-.latest-post .post-item:nth-child(3) .post-img {
+.latest-post .post-item:nth-child(2) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/muskbezosnasa-480x270.jpg);
   background-size: cover;
   background-position: bottom;
 }
 
-.latest-post .post-item:nth-child(4) .post-img {
+.latest-post .post-item:nth-child(3) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Untitled-design-59-516x270.png);
   background-size: cover;
   background-position: bottom;
 }
 
-.latest-post .post-item:nth-child(5) .post-img {
+.latest-post .post-item:nth-child(4) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Untitled-design2-516x270.png);
   background-size: cover;
   background-position: bottom;
 }
 
-.latest-post .post-item:nth-child(6) .post-img {
+.latest-post .post-item:nth-child(5) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-464x270.png);
   background-size: cover;
   background-position: bottom;
 }
 
-.latest-post .post-item:nth-child(7) .post-img {
+.latest-post .post-item:nth-child(6) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Farmville-516x270.jpg);
   background-size: cover;
   background-position: bottom;
@@ -576,6 +581,7 @@ main {
 
 /* For screen size greater than 768px */
 @media screen and (min-width: 768px) {
+  /* Insights section */
   .insights-section {
     margin-top: 110px;
     position: relative;
@@ -595,10 +601,55 @@ main {
     width: 33%;
     height: 49%;
   }
+
+  /* Latest post section */
+  .latest-post .posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .latest-post .post-item {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    margin-right: 1rem;
+  }
+
+  .latest-post .post-img {
+    width: 100%;
+    padding-top: 50%;
+    height: 0;
+  }
+}
+
+/* For screen size greater than 768px and less than 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Insights section */
+  .insights-section {
+    height: 60vh;
+  }
+
+  .insights-section-article:nth-child(1) h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .insights-section-article:nth-child(2) h2,
+  .insights-section-article:nth-child(3) h2 {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  /* Latest post section */
+  .latest-post .post-item {
+    width: 32%;
+  }
 }
 
 /* For screen size greater than 1024px */
 @media screen and (min-width: 1024px) {
+  /* Insights section */
   .insights-section {
     height: 75vh;
   }
@@ -638,22 +689,9 @@ main {
     z-index: 5;
     font-size: 14px;
   }
-}
 
-/* For screen size greater than 768px and less than 1023px */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .insights-section {
-    height: 60vh;
-  }
-
-  .insights-section-article:nth-child(1) h2 {
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .insights-section-article:nth-child(2) h2,
-  .insights-section-article:nth-child(3) h2 {
-    font-size: 20px;
-    line-height: 1.1;
+  /* Latest post section */
+  .latest-post .post-item {
+    width: 24%;
   }
 }
