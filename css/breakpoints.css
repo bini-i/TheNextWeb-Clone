@@ -1,5 +1,6 @@
 /* For screen size greater than 768px */
 @media screen and (min-width: 768px) {
+
   /* Insights section */
   .insights-section {
     margin-top: 110px;
@@ -40,10 +41,42 @@
     padding-top: 50%;
     height: 0;
   }
+
+  /* Latest funding section */
+  .latest-funding-header a {
+    float: left;
+    border-right: solid 1px #f94640;
+    padding-right: 12px;
+    margin-right: 12px;
+    font-size: 16px;
+  }
+
+  .latest-funding-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .latest-funding-child {
+    width: 30%;
+  }
+
+  /* Catagory section */
+  .catagory-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catagory article {
+    height: 75%;
+  }
 }
 
 /* For screen size greater than 768px and less than 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
   /* Header section */
   .nav-dark {
     background: #131313;
@@ -111,10 +144,16 @@
   .latest-post .post-item {
     width: 32%;
   }
+
+  /* Catagory Section */
+  .catagory {
+    width: 49%;
+  }
 }
 
 /* For screen size greater than 1024px */
 @media screen and (min-width: 1024px) {
+
   /* Insights section */
   .insights-section {
     height: 75vh;
@@ -159,5 +198,16 @@
   /* Latest post section */
   .latest-post .post-item {
     width: 24%;
+  }
+
+  /* Latest Funding section */
+  .latest-funding-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .latest-funding-header h2 {
+    margin-bottom: 0;
   }
 }

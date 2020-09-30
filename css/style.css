@@ -229,7 +229,7 @@ main {
 
 .latest-post .post-item:nth-child(5) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-464x270.png);
-  background-size: cover;
+  backgrou￼￼￼ David ￼￼￼ David nd-size: cover;
   background-position: bottom;
 }
 
@@ -256,16 +256,20 @@ main {
 }
 
 /* latest funding section */
-.latest-funding-.mobile-header {
+.latest-funding-section {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
 }
 
-.latest-funding-.mobile-header a {
-  padding-top: 1em;
+.latest-funding-header {
+  padding-bottom: 1em;
+}
+
+.latest-funding-header a {
   color: #f94640;
-  font-size: 13px;
+  font-size: 16px;
+  display: block;
 }
 
 .latest-funding-body img {
@@ -284,6 +288,9 @@ main {
   padding: 10px 16px 10px 84px;
   margin: 0;
   font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .latest-funding-child {
@@ -312,6 +319,10 @@ main {
   font-weight: bold;
   margin: 5px;
   margin-left: 0;
+}
+
+.latest-funding-child .source {
+  color: #aaa;
 }
 
 .icons-div a {
