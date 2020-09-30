@@ -74,6 +74,22 @@ body {
   font-size: 13px;
 }
 
+.post-item ul {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.latest-funding-body ul {
+  border-top: 2px solid #fee9e5;
+  padding-top: 10px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.catagory-container ul {
+  justify-content: flex-start;
+}
+
 .mobile-header nav ul {
   display: flex;
   flex-direction: row;
@@ -153,6 +169,19 @@ main {
   padding: 0 12px;
 }
 
+.latest-post h2,
+.latest-funding-section h2,
+.catagory-title {
+  color: #f42;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.latest-post h2 {
+  float: left;
+}
+
 .insights-section h2,
 .catagory article h2 {
   font-size: 20px;
@@ -185,19 +214,6 @@ main {
 
 .latest-post .posts {
   margin: 0;
-}
-
-.latest-post h2,
-.latest-funding-section h2,
-.catagory-title {
-  color: #f42;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 14px;
-}
-
-.latest-post h2 {
-  float: left;
 }
 
 .post-item {
@@ -256,11 +272,6 @@ main {
 .post-item ul li {
   float: left;
   margin-right: 15px;
-}
-
-.post-item ul {
-  color: #aaa;
-  font-size: 12px;
 }
 
 /* latest funding section */
@@ -347,13 +358,6 @@ main {
   color: #000;
 }
 
-.latest-funding-body ul {
-  border-top: 2px solid #fee9e5;
-  padding-top: 10px;
-  margin-top: 5px;
-  font-size: 12px;
-}
-
 /* catagory  Section */
 .catagory article {
   width: 100%;
@@ -363,10 +367,6 @@ main {
 
 .catagory .popular {
   padding: 14px;
-}
-
-.catagory-container ul {
-  justify-content: flex-start;
 }
 
 .catagory-container ul li {
