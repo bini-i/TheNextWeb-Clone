@@ -66,6 +66,14 @@ body {
   height: 100%;
 }
 
+.insights-section ul,
+.catagory-container ul {
+  display: flex;
+  justify-content: flex-start;
+  color: #9f9f9e;
+  font-size: 13px;
+}
+
 .mobile-header nav ul {
   display: flex;
   flex-direction: row;
@@ -151,14 +159,6 @@ main {
   font-weight: bold;
 }
 
-.insights-section ul,
-.catagory-container ul {
-  display: flex;
-  justify-content: flex-start;
-  color: #9f9f9e;
-  font-size: 13px;
-}
-
 .insights-section ul li,
 .catagory-container ul li {
   margin-right: 12px;
@@ -168,7 +168,7 @@ main {
   display: none;
 }
 
-.insights-section div>* {
+.insights-section div > * {
   margin-bottom: 3px;
 }
 
@@ -237,7 +237,7 @@ main {
 
 .latest-post .post-item:nth-child(5) .post-img {
   background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Snag_16c56560-464x270.png);
-  backgrou￼￼￼ David ￼￼￼ David nd-size: cover;
+  background-size: cover;
   background-position: bottom;
 }
 
