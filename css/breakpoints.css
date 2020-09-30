@@ -109,21 +109,21 @@
     color: #aaa;
     display: block;
     line-height: 1;
-    padding: 9px 5px 0;
-    font-size: 14px;
+    padding: 0 5px;
+    font-size: 13px;
   }
 
   .nav-white ul:nth-child(2) a {
     padding: 16px;
     height: 46px;
     position: relative;
-    top: 4px;
+    top: 0;
+    left: 5px;
     color: #aaa;
   }
 
   .nav-white ul:nth-child(2) {
     border-left: 1px solid #aaa;
-    border-right: 1px solid #aaa;
   }
 
   .company-infos {
@@ -331,8 +331,8 @@
   .insights-date {
     display: block;
     position: absolute;
-    top: 20px;
-    left: 415px;
+    top: 35px;
+    right: 10px;
     z-index: 5;
     font-size: 14px;
   }
