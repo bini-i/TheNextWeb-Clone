@@ -230,6 +230,15 @@
     width: 31%;
   }
 
+  /* latest funding section */
+  .latest-funding-child {
+    width: 32%;
+  }
+
+  .latest-funding-child:last-child {
+    display: none;
+  }
+
   /* Catagory Section */
   .catagory {
     width: 49%;
@@ -347,6 +356,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .latest-funding-child {
+    width: 24%;
   }
 
   /* Catagory section */

@@ -175,7 +175,7 @@ main {
 .catagory-title {
   color: #f42;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 14px;
 }
 
@@ -305,7 +305,6 @@ main {
 }
 
 .latest-funding-body img {
-  width: 60px;
   height: 60px;
   margin: 10px;
   position: absolute;
@@ -436,7 +435,7 @@ main {
   background: #fef2f1;
   margin-top: -10px;
   color: #f42;
-  padding: 10px 0 14px 0;
+  padding: 10px 0 14px 14px;
 }
 
 .catagory-container .latest h5 {
