@@ -25,7 +25,7 @@
     line-height: 32px;
     max-height: 32px;
     position: relative;
-    color: #ffffff99;
+    color: #fff9;
     justify-content: space-between;
     padding-left: 7rem;
   }
@@ -42,7 +42,7 @@
   .banner {
     margin-top: 80px;
     font-size: 12px;
-    height: 28px
+    height: 28px;
   }
 
   .logo {
@@ -141,6 +141,10 @@
     height: 49%;
   }
 
+  .insights-section ul {
+    font-size: 10px;
+  }
+
   /* Latest post section */
   .latest-post .posts {
     display: flex;
@@ -191,10 +195,17 @@
   .catagory article {
     height: 75%;
   }
+
+  /* Footer */
+  footer .legal {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /* For screen size greater than 768px and less than 1023px */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
   /* Insights section */
   .insights-section {
     height: 60vh;
@@ -213,7 +224,7 @@
 
   /* Latest post section */
   .latest-post .post-item {
-    width: 32%;
+    width: 31%;
   }
 
   /* Catagory Section */
@@ -225,6 +236,7 @@
 
 /* For screen size greater than 1024px */
 @media screen and (min-width: 1024px) {
+
   /* header section */
   .mobile-header {
     display: none;
@@ -325,7 +337,7 @@
 
   /* Latest post section */
   .latest-post .post-item {
-    width: 24%;
+    width: 23%;
   }
 
   /* Latest Funding section */
@@ -340,4 +352,8 @@
   }
 
   /* Catagory section */
+  .catagory {
+    width: 32%;
+    margin-bottom: 315px;
+  }
 }
