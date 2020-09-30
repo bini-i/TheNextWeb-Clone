@@ -1,0 +1,47 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-dark {
+    background: #131313;
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    max-height: 32px;
+    position: relative;
+    color: #fff;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 120px;
+    float: left;
+  }
+
+  .default-header nav {
+    height: 8vh;
+  }
+
+  .nav-white {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-white li {
+    margin-right: 10px;
+  }
+
+  .nav-white ul:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .company-infos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 12rem;
+  }
+
+  .company-infos li {
+    margin-right: 10px;
+  }
+}
