@@ -38,8 +38,8 @@ body {
   height: 100%;
 }
 
-/* Header section */
-header {
+/* .mobile-header section */
+.mobile-header {
   position: fixed;
   width: 100%;
   height: 48px;
@@ -62,21 +62,21 @@ header {
   height: 100%;
 }
 
-header nav ul {
+.mobile-header nav ul {
   display: flex;
   flex-direction: row;
 }
 
-header nav li {
+.mobile-header nav li {
   padding: 1rem;
   border-left: solid 1px #eee;
 }
 
-header .search-icon {
+.mobile-header .search-icon {
   color: #7e7e7e;
 }
 
-header .hamburger-icon {
+.mobile-header .hamburger-icon {
   color: #f94640;
   width: 120%;
 }
@@ -256,13 +256,13 @@ main {
 }
 
 /* latest funding section */
-.latest-funding-header {
+.latest-funding-.mobile-header {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
 }
 
-.latest-funding-header a {
+.latest-funding-.mobile-header a {
   padding-top: 1em;
   color: #f94640;
   font-size: 13px;
@@ -418,7 +418,7 @@ main {
 }
 
 .catagory-container .latest-img {
-  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today.jpg);
+  background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-.mobile-header_bitcoin_today.jpg);
   background-position: center;
   float: right;
   width: 95px;
