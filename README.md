@@ -6,6 +6,18 @@
 
 ![screenshot](app_screenshot.png)
 
+This project is the sixth one in the HTML/CSS module at Microverse
+It consists of building a responsive website. We cloned The Next Web, a tech-focused magazine which uses media queries to gracefully degrade their site as the window size is reduced.
+
+The page is very straightforward, so you should be able to clone it even if your CSS skills aren’t perfect.
+
+We worked on all the requirements given on this project.
+- Aligned all elements with float and flex or grid.
+- Used a mobile first approach when dealing with media queries with 2 breakpoints (you should figure out the exact width for each breakpoint by yourself).
+- Used semantic HTML elements for the header, the main content and the footer.
+- We styled the elements to look like the real webpage.
+- We used some CSS positioning techniques like Flexbox and Grid. We have ignored any ads, comments or interactive elements (which use JavaScript) and media queries.
+
 ## Built With
 
 - HTML5
