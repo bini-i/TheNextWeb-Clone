@@ -1,6 +1,5 @@
 /* For screen size greater than 768px */
 @media screen and (min-width: 768px) {
-
   /* Insights section */
   .insights-section {
     margin-top: 110px;
@@ -76,7 +75,6 @@
 
 /* For screen size greater than 768px and less than 1023px */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-
   /* Header section */
   .nav-dark {
     background: #131313;
@@ -148,12 +146,12 @@
   /* Catagory Section */
   .catagory {
     width: 49%;
+    margin-bottom: 315px;
   }
 }
 
 /* For screen size greater than 1024px */
 @media screen and (min-width: 1024px) {
-
   /* Insights section */
   .insights-section {
     height: 75vh;
@@ -210,4 +208,6 @@
   .latest-funding-header h2 {
     margin-bottom: 0;
   }
+
+  /* Catagory section */
 }
