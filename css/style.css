@@ -85,6 +85,10 @@ body {
   width: 120%;
 }
 
+.timer-div {
+  display: none;
+}
+
 /* Banner Section */
 .banner {
   position: fixed;
@@ -94,7 +98,7 @@ body {
   background: #ffdd3c;
   display: grid;
   place-items: center;
-  z-index: 5;
+  z-index: 99;
 }
 
 /* Main Section */

@@ -1,8 +1,129 @@
 /* For screen size greater than 768px */
 @media screen and (min-width: 768px) {
+
+  /* header */
+
+    .mobile-header {
+      display: none;
+    }
+
+    .default-header {
+      display: block;
+    }
+
+    .default-header nav {
+      position: fixed;
+      width: 100%;
+      z-index: 99;
+      background: #fff;
+    }
+
+    .nav-dark {
+      background: #131313;
+      display: flex;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 32px;
+      max-height: 32px;
+      position: relative;
+      color: #ffffff99;
+      justify-content: space-between;
+      padding-left: 7rem;
+    }
+
+    .nav-dark li {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+
+    .active {
+      color: #fff;
+    }
+
+    .banner {
+      margin-top: 80px;
+      font-size: 12px;
+      height: 28px
+    }
+
+    .logo {
+      width: 108px;
+      float: left;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      height: 80px;
+      display: grid;
+      place-items: center;
+    }
+
+    .logo img {
+      width: 80px;
+    }
+
+    .default-header nav {
+      height: 8vh;
+    }
+
+    .nav-white {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 7rem;
+      background: #fff;
+      height: 50px;
+    }
+
+    .nav-white li {
+      margin-right: 10px;
+      display: grid;
+      place-items: center;
+    }
+
+    .nav-white ul:nth-child(1) {
+      display: flex;
+      flex-direction: row;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    .nav-white ul:nth-child(1) a {
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #aaa;
+      display: block;
+      line-height: 1;
+      padding: 9px 5px 0;
+      font-size: 14px;
+    }
+
+    .nav-white ul:nth-child(2) a {
+      padding: 16px;
+      height: 46px;
+      position: relative;
+      top: 4px;
+      color: #aaa;
+    }
+
+    .nav-white ul:nth-child(2) {
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+    }
+
+    .company-infos {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+    }
+
+    .company-infos li {
+      margin-right: 10px;
+    }
+
   /* Insights section */
   .insights-section {
-    margin-top: 110px;
+    margin-top: 89px;
     position: relative;
   }
 
@@ -46,89 +167,6 @@
 /* For screen size greater than 768px and less than 1023px */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-/* header */
-
-  .mobile-header {
-    display: none;
-  }
-
-  .nav-dark {
-    background: #131313;
-    display: flex;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 32px;
-    max-height: 32px;
-    position: relative;
-    color: #ffffff99;
-    justify-content: space-between;
-    padding-left: 7px;
-  }
-
-  .active {
-    color: #fff;
-  }
-
-  .banner {
-    margin-top: 13px;
-    font-size: 12px;
-    height: 28px;
-  }
-
-  .logo {
-    width: 120px;
-    float: left;
-  }
-
-  .default-header nav {
-    height: 8vh;
-  }
-
-  .nav-white {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .nav-white li {
-    margin-right: 10px;
-  }
-
-  .nav-white ul:nth-child(1) {
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    width: 100%;
-  }
-
-  .nav-white ul:nth-child(1) a {
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #aaa;
-    display: block;
-    line-height: 1;
-    padding: 9px 5px 0;
-    font-size: 14px;
-  }
-
-  .nav-white ul:nth-child(2) a {
-    padding: 16px;
-    height: 46px;
-    position: relative;
-    top: 4px;
-    color: #aaa;
-  }
-
-  .company-infos {
-    display: flex;
-    flex-direction: row;
-    margin-left: 12rem;
-  }
-
-  .company-infos li {
-    margin-right: 10px;
-  }
-
   /* Insights section */
   .insights-section {
     height: 60vh;
@@ -155,6 +193,64 @@
 
 /* For screen size greater than 1024px */
 @media screen and (min-width: 1024px) {
+
+  /* header section */
+
+  .mobile-header {
+    display: none;
+  }
+
+  .default-header {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-white, .nav-dark {
+    padding-left: 0;
+  }
+
+  .nav-dark {
+    justify-content: space-between;
+  }
+
+  .company-infos {
+    margin-left: auto;
+  }
+
+  .timer-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .timer-div img {
+    width: 125px;
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .timer span {
+    color: #f42;
+    margin-right: 5px;
+  }
+
+  .get-tickets {
+    background-color: #0cc;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-left: 10px;
+    width: 75px;
+    padding: 8px;
+  }
+
   /* Insights section */
   .insights-section {
     height: 75vh;
